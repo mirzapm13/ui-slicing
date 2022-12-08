@@ -1,11 +1,11 @@
 import React from 'react';
-import Survey from 'components/pages/Survey'
-import './assets/global.scss'
+import Button from 'components/atoms/Button';
+import './assets/styles/global.scss'
 
 function App() {
   return (
     <div className="App">
-      <Survey />
+      <Button text="Contact Us" />
     </div>
   );
 }
