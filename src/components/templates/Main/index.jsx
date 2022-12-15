@@ -5,7 +5,8 @@ import Third from 'components/organisms/Third';
 import Fourth from 'components/organisms/Fourth';
 import Fifth from 'components/organisms/Fifth';
 import Footer from 'components/organisms/Footer';
-import CookiesModal from 'components/organisms/CookiesModal';
+
+import './_main.scss';
 
 export default function Main() {
   return (
@@ -17,7 +18,6 @@ export default function Main() {
       <Fourth />
       <Fifth />
       <Footer />
-      <CookiesModal />
     </div>
   );
 }

@@ -26,11 +26,9 @@ module.exports = {
     'react/jsx-indent': ['error', 2],
     'max-len': [2, 140, 2],
     'no-console': 'off',
-    // 'react/prop-types': [2, { ignore: ['history'] }],
     'jsx-a11y/label-has-associated-control': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/no-set-state': 'off',
-    'prettier/prettier': 2,
     'react/jsx-props-no-spreading': 'off',
     'prefer-promise-reject-errors': 'off',
     camelcase: 'off',
@@ -41,5 +39,6 @@ module.exports = {
     'import/no-unresolved': 'off',
     'default-param-last': 'off',
     'object-curly-newline': 'off',
+    'prettier/prettier': 2,
   },
 };
