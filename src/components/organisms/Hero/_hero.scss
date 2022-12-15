@@ -1,0 +1,19 @@
+.hero {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 220px;
+    overflow: hidden;
+
+    .elipse-1 {
+        position: absolute;
+        right: -20%;
+        top: -60%;
+    }
+
+    .elipse-2 {
+        position: absolute;
+        left: -10%;
+        top: -10%;
+    }
+}

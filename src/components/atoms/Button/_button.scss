@@ -1,0 +1,43 @@
+@keyframes button-hover {
+    from {
+        color: #1E1E2C;
+    }
+
+    to {
+        color: #FFFFFF;
+    }
+}
+
+.button {
+    padding: 14px 32px;
+    background: linear-gradient(273.72deg, #FC4B2C 0%, #FFB60E 100%);
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1E1E2C;
+    transition: 0.3s;
+    position: relative;
+
+    // &:hover::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     z-index: -1;
+    //     margin: -5px;
+    //     /* !importanté */
+    //     border-radius: inherit;
+    //     /* !importanté */
+    //     background: linear-gradient(273.72deg, #FC4B2C 0%, #FFB60E 100%);
+    // }
+
+    &:hover {
+        color: #FFFFFF;
+    //     border: 3px solid #1E1E2C;
+    //     padding: 11px 29px;
+    }
+
+}

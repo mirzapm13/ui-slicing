@@ -1,0 +1,18 @@
+
+.slider {
+    @keyframes translateinfinite {
+        100% { transform:translateX(calc(-180px * 12));  }
+    }
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 57px;
+    overflow: hidden;
+    img {
+        animation:translateinfinite 25s linear infinite;
+    }
+    z-index: 1;
+}

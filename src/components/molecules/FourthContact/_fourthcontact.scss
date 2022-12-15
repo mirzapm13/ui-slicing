@@ -1,0 +1,73 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1134px;
+    margin: 0 auto 96px auto;
+
+    &-howto {
+        width: 604px;
+    }
+
+    &-vr {
+        width: 467px;
+        height: 482px;
+        background: #292937;
+        border-radius: 23px;
+        padding: 35px;
+        position: relative;
+        overflow: hidden;
+
+        &-elipse-1 {
+            position: absolute;
+            right: -20%;
+            top: -50%;
+        }
+
+        &-elipse-2 {
+            position: absolute;
+            left: -25%;
+            bottom: -45%;
+        }
+
+        &-logo {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+
+        &-man {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 40px;
+            max-width: 281px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        button {
+            padding: 14px 32px;
+            background: linear-gradient(273.72deg, #FC4B2C 0%, #FFB60E 100%);
+            border-radius: 50px;
+            border: none;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color: #1E1E2C;
+            margin-bottom: 101px;
+            width: fit-content;
+            position: relative;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.payment-methods {
+    height: 550px;
+    width: 100%;
+    max-width: 1134px;
+    margin: 0 auto;
+    background: #1E1E2C;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 96px;
+    margin-top: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .elipse-1 {
+        position: absolute;
+        left: -40%;
+        bottom: -100%;
+    }
+
+    .elipse-2 {
+        position: absolute;
+        right: -30%;
+        top: -100%;
+    }
+
+    .fiat {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 300px;
+        row-gap: 10px;
+        column-gap: 10px;
+        justify-content: center;
+        position: relative;
+        margin-top: 40px;
+
+        &__pills {
+            padding: 4px 16px;
+            text-align: center;
+            width: fit-content;
+            background: #1E1E2C;
+            border-radius: 15px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+
+    .blockchain {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 300px;
+        row-gap: 10px;
+        column-gap: 10px;
+        justify-content: center;
+        position: relative;
+        margin-top: 40px;
+
+        &__pills {
+            padding: 4px 16px;
+            text-align: center;
+            width: fit-content;
+            background: #1E1E2C;
+            border-radius: 15px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+
+    .illustration {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            margin: 78px -50px 30px -50px;
+        }
+
+        button {
+            padding: 14px 32px;
+            background: linear-gradient(273.72deg, #FC4B2C 0%, #FFB60E 100%);
+            border-radius: 50px;
+            border: none;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color: #1E1E2C;
+            margin-bottom: 101px;
+            width: fit-content;
+        }
+    }
+}

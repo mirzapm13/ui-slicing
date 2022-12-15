@@ -1,0 +1,55 @@
+.blockchain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 96px;
+
+    &-container {
+        width: 100%;
+        max-width: 1098px;
+        height: 470px;
+        filter: drop-shadow(7px 7px 15px rgba(0, 0, 0, 0.15));
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        padding: 45px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 50px;
+        background: #292937;
+
+        &-elipse-1 {
+            position: absolute;
+            left: -50%;
+            bottom: -130%;
+        }
+
+        &-elipse-2 {
+            position: absolute;
+            right: -50%;
+            top: -100%;
+        }
+
+        &-title {
+            position: relative;
+            align-self: center;
+            max-width: 523px;
+
+            h3 {
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 64px;
+            }
+
+            p {
+                line-height: 24px;
+            }
+
+        }
+
+        &-image {
+            position: relative;
+        }
+    }
+
+}

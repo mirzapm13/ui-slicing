@@ -30,7 +30,7 @@ module.exports = {
     'jsx-a11y/label-has-associated-control': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/no-set-state': 'off',
-    'prettier/prettier': 0,
+    'prettier/prettier': 2,
     'react/jsx-props-no-spreading': 'off',
     'prefer-promise-reject-errors': 'off',
     camelcase: 'off',
@@ -40,5 +40,6 @@ module.exports = {
     'no-restricted-exports': 'off',
     'import/no-unresolved': 'off',
     'default-param-last': 'off',
+    'object-curly-newline': 'off',
   },
 };

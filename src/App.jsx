@@ -1,11 +1,11 @@
-import React from 'react';
-import Button from 'components/atoms/Button';
-import './assets/styles/global.scss'
+// import React from 'react';
+import Main from './components/templates/Main';
+import './assets/styles/globals/_index.scss';
 
 function App() {
   return (
     <div className="App">
-      <Button text="Contact Us" />
+      <Main />
     </div>
   );
 }

@@ -1,0 +1,55 @@
+.content {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+
+    &-with {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            size: 100%;
+        }
+
+        .pills {
+            margin-bottom: 32px;
+            background: #E52B20;
+            border-radius: 15px;
+            padding: 4px 16px;
+        }
+    }
+
+    &-vs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            size: 100%;
+        }
+    }
+
+    &-without {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .pills {
+            margin-bottom: 32px;
+            background: #63CE63;
+            border-radius: 15px;
+            padding: 4px 16px;
+        }
+
+        img {
+            size: 100%;
+        }
+    }
+}

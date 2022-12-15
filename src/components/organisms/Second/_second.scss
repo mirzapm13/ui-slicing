@@ -1,0 +1,27 @@
+.second {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 96px auto 101px auto;
+
+
+
+    .elipse-1 {
+        position: absolute;
+        right: -40%;
+        bottom: -50%;
+    }
+
+    .elipse-2 {
+        position: absolute;
+        left: -40%;
+        top: -70%;
+    }
+
+    &__main{
+        width: 100%;
+        max-width: 1440px;   
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+}

@@ -1,0 +1,82 @@
+.footer-card {
+    width: 100%;
+    max-width: 1134px;
+    height: 457px;
+    background: #1E1E2C;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding: 60px 112px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 74px;
+
+    &__logo {
+        width: 282px;
+        margin: 38px;
+    }
+
+    &__text {
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__link {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        bottom: 60px;
+        left: 120px;
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0;
+        }
+
+        a {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+    }
+
+    &__social {
+        position: absolute;
+        width: 172px;
+        height: 72px;
+        right: 112px;
+        bottom: 60px;
+
+        p {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &-logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .elipse-1 {
+        position: absolute;
+        right: -80%;
+        bottom: -150%;
+    }
+
+    .elipse-2 {
+        position: absolute;
+        left: -80%;
+        top: -150%;
+    }
+}
