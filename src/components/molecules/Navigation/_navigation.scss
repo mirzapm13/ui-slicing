@@ -1,3 +1,5 @@
+@use '../../../assets/styles/globals/variables' as v;
+
 nav {
     display: flex;
     align-items: center;
@@ -8,12 +10,36 @@ nav {
         align-items: center;
         gap: 38px;
 
-        li {
+        li.list-item {
             text-decoration: none;
             list-style-type: none;
             font-weight: 500;
             font-size: 18px;
             line-height: 23.5px;
+            @media (max-width: v.$laptop-down) {
+                display: none;       
+            }
+        }
+
+        li.list-button  {
+            text-decoration: none;
+            list-style-type: none;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23.5px;
+        }
+
+        li.list-icon{
+            display: none;
+            text-decoration: none;
+            list-style-type: none;
+            @media (max-width: v.$laptop-down) {
+                display: block;       
+            }
+
+            img {
+                width: 20px;
+            }
         }
     }
 }

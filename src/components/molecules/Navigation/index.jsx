@@ -2,6 +2,7 @@ import Button from 'components/atoms/Button';
 import './_navigation.scss';
 import ContactModal from 'components/organisms/ContactModal';
 import Check from 'images/check.svg';
+import Dropdown from 'images/dropdown-toggle.png';
 import useContactModal from '../../../hooks/useContactModal';
 import CommonModal from '../../organisms/CommonModal';
 import useCommonModal from '../../../hooks/useCommonModal';
@@ -19,10 +20,13 @@ export default function Navigation() {
     <>
       <nav>
         <ul>
-          <li>How It Works</li>
-          <li>How To Get It</li>
-          <li>Testimonials</li>
-          <li>
+          <li className="list-item">How It Works</li>
+          <li className="list-item">How To Get It</li>
+          <li className="list-item">Testimonials</li>
+          <li className="list-icon">
+            <img src={Dropdown} alt="dropdown-toggle-button" />
+          </li>
+          <li className="list-button">
             <Button text="Contact Us" click={() => toggle()} />
           </li>
         </ul>
