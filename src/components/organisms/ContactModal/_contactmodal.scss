@@ -24,113 +24,124 @@
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 4;
+    animation: fade-in 0.5s;
 }
 
-.contact-modal {
-    width: 100%;
-    max-width: 629px;
-    height: 100%;
-    height: 784px;
-    background: #1E1E2C;
-    border-radius: 20px;
-    margin: 0 auto;
-    margin-bottom: 50px;
+.modal-gradient {
+    padding: 2px;
+    background: linear-gradient(273.72deg, #FC4B2C 0%, #FFB60E 100%);
+    height: fit-content;
+    width: fit-content;
     position: fixed;
-    padding: 45px;
-    overflow: hidden;
-
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 5;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    border-radius: 20px;
+    overflow: hidden;
+    animation: fade-in 0.5s;
 
-    .exit-img {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-    }
+    .contact-modal {
+        width: 100%;
+        max-width: 629px;
+        height: 100%;
+        height: 784px;
+        background: #1E1E2C;
+        border-radius: 20px;
+        margin: 0 auto;
+        padding: 45px;
 
-    .elipse-1 {
-        position: absolute;
-        top: -70%;
-        left: -120%;
-    }
+        z-index: 5;
+        animation: fade-in 0.2s;
 
-    .logo {
-        margin-bottom: 30px;
-        position: relative;
-    }
-
-    h2 {
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 44px;
-        position: relative;
-    }
-
-    label {
-        font-family: 'Open Sans';
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 20px;
-        position: relative;
-
-        span {
-            color: #FC4B2C;
-        }
-    }
-
-    .form {
-        display: grid;
-        grid-template-areas: 'name email'
-            'phone service'
-            'message message';
-        column-gap: 22px;
-        row-gap: 30px;
-        position: relative;
-
-        &-name {
-            @include form-layout;
-            grid-area: name;
+        .exit-img {
+            position: absolute;
+            right: 20px;
+            top: 20px;
         }
 
-        &-email {
-            @include form-layout;
-            grid-area: email;
+        .elipse-1 {
+            position: absolute;
+            top: -70%;
+            left: -120%;
         }
 
-        &-phone {
-            @include form-layout;
-            grid-area: phone;
+        .logo {
+            margin-bottom: 30px;
+            position: relative;
         }
 
-        &-service {
-            @include form-layout;
-            grid-area: service;
+        h2 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+            position: relative;
         }
 
-        &-message {
-            @include form-layout;
-            grid-area: message;
+        label {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            position: relative;
 
-            textarea {
-                height: 92px;
-                border-radius: 20px;
-                padding: 10px 12px;
-                font-family: 'Inter';
-                outline: none;
+            span {
+                color: #FC4B2C;
             }
         }
 
-        input[type="submit"] {
-            background: linear-gradient(273.72deg, #FC4B2C 0%, #FFB60E 100%);
-            border-radius: 50px;
-            border: none;
-            padding: 14px 32px;
-            width: fit-content;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 19px;
+        .form {
+            display: grid;
+            grid-template-areas: 'name email'
+                'phone service'
+                'message message';
+            column-gap: 22px;
+            row-gap: 30px;
+            position: relative;
+
+            &-name {
+                @include form-layout;
+                grid-area: name;
+            }
+
+            &-email {
+                @include form-layout;
+                grid-area: email;
+            }
+
+            &-phone {
+                @include form-layout;
+                grid-area: phone;
+            }
+
+            &-service {
+                @include form-layout;
+                grid-area: service;
+            }
+
+            &-message {
+                @include form-layout;
+                grid-area: message;
+
+                textarea {
+                    height: 92px;
+                    border-radius: 20px;
+                    padding: 10px 12px;
+                    font-family: 'Inter';
+                    outline: none;
+                }
+            }
+
+            input[type="submit"] {
+                background: linear-gradient(273.72deg, #FC4B2C 0%, #FFB60E 100%);
+                border-radius: 50px;
+                border: none;
+                padding: 14px 32px;
+                width: fit-content;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+            }
         }
     }
 }

@@ -1,8 +1,8 @@
 import './_footercard.scss';
 import Logo from 'images/Logo.svg';
-import Instagram from 'images/instagram.png';
-import Twitter from 'images/twitter.png';
-import LinkedIn from 'images/linkedin.png';
+import Instagram from 'images/instagram.svg';
+import Twitter from 'images/twitter.svg';
+import LinkedIn from 'images/linkedin.svg';
 import elipse1 from 'images/Ellipse 9.svg';
 import elipse2 from 'images/Ellipse 10.svg';
 

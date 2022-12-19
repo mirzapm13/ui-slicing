@@ -1,18 +1,35 @@
-
 .slider {
-    @keyframes translateinfinite {
-        100% { transform:translateX(calc(-180px * 12));  }
-    }
+    height: 70px;
     position: absolute;
     left: 0;
     width: 100%;
-    display: inline-flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 57px;
-    overflow: hidden;
-    img {
-        animation:translateinfinite 25s linear infinite;
+
+    &__list {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: bannermove 10s linear infinite;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 57px;
+
+        img {
+            width: fit-content;
+        }
     }
-    z-index: 1;
+
+}
+
+
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
 }

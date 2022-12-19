@@ -1,3 +1,5 @@
+@use '../../../assets/styles/globals/variables' as v;
+
 .payment-methods {
     height: 550px;
     width: 100%;
@@ -13,6 +15,10 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
+    @media (max-width: v.$laptop-down) {
+        max-width: 1024px;
+    }
 
     .elipse-1 {
         position: absolute;
@@ -50,7 +56,7 @@
         }
     }
 
-    .blockchain {
+    .blockchain-payment {
         display: flex;
         flex-wrap: wrap;
         max-width: 300px;
@@ -82,19 +88,6 @@
 
         img {
             margin: 78px -50px 30px -50px;
-        }
-
-        button {
-            padding: 14px 32px;
-            background: linear-gradient(273.72deg, #FC4B2C 0%, #FFB60E 100%);
-            border-radius: 50px;
-            border: none;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            color: #1E1E2C;
-            margin-bottom: 101px;
-            width: fit-content;
         }
     }
 }

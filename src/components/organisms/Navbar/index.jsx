@@ -1,12 +1,12 @@
 import Navigation from 'components/molecules/Navigation';
 import Logo from 'images/Logo.png';
-import './_header.scss';
+import './_navbar.scss';
 
-export default function Header() {
+export default function Navbar() {
   return (
-    <header>
+    <div className="navbar">
       <img src={Logo} alt="" srcSet="" />
       <Navigation />
-    </header>
+    </div>
   );
 }

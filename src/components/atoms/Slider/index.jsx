@@ -16,19 +16,34 @@ import './_slider.scss';
 export default function Slider() {
   return (
     <div className="slider">
-      <img src={Apple} alt="" />
-      <img src={Bancontact} alt="" />
-      <img src={Avalanche} alt="" />
-      <img src={Ethereum} alt="" />
-      <img src={Giropay} alt="" />
-      <img src={Gpay} alt="" />
-      <img src={Deal} alt="" />
-      <img src={Klarna} alt="" />
-      <img src={Mastercard} alt="" />
-      <img src={Paydirekt} alt="" />
-      <img src={Paypal} alt="" />
-      <img src={Polygon} alt="" />
-      <img src={Visa} alt="" />
+      <div className="slider__list">
+        <img src={Apple} alt="" />
+        <img src={Bancontact} alt="" />
+        <img src={Avalanche} alt="" />
+        <img src={Ethereum} alt="" />
+        <img src={Giropay} alt="" />
+        <img src={Gpay} alt="" />
+        <img src={Deal} alt="" />
+        <img src={Klarna} alt="" />
+        <img src={Mastercard} alt="" />
+        <img src={Paydirekt} alt="" />
+        <img src={Paypal} alt="" />
+        <img src={Polygon} alt="" />
+        <img src={Visa} alt="" />
+        <img src={Apple} alt="" />
+        <img src={Bancontact} alt="" />
+        <img src={Avalanche} alt="" />
+        <img src={Ethereum} alt="" />
+        <img src={Giropay} alt="" />
+        <img src={Gpay} alt="" />
+        <img src={Deal} alt="" />
+        <img src={Klarna} alt="" />
+        <img src={Mastercard} alt="" />
+        <img src={Paydirekt} alt="" />
+        <img src={Paypal} alt="" />
+        <img src={Polygon} alt="" />
+        <img src={Visa} alt="" />
+      </div>
     </div>
   );
 }

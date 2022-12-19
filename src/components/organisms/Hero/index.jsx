@@ -9,8 +9,10 @@ export default function Hero() {
     <section className="hero">
       <img className="elipse-1" src={elipse1} alt="" />
       <img className="elipse-2" src={elipse2} alt="" />
-      <HeroContent />
-      <HeroSlider />
+      <div className="hero__layout">
+        <HeroContent />
+        <HeroSlider />
+      </div>
     </section>
   );
 }

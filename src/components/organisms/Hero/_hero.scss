@@ -1,9 +1,23 @@
+@use '../../../assets/styles/globals/variables' as v;
+
 .hero {
     width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
     padding-top: 220px;
     overflow: hidden;
+    position: relative;
+    padding-bottom: 96px;
+
+    &__layout {
+        width: 100%;
+        max-width: 1440px;
+        position: relative;
+        margin: 0 auto;
+
+        @media (max-width: v.$laptop-down) {
+            max-width: 1024px;
+        }
+    }
 
     .elipse-1 {
         position: absolute;

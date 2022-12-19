@@ -1,4 +1,6 @@
-header {
+@use '../../../assets/styles/globals/variables'as v;
+
+.navbar {
     width: 100%;
     position: fixed;
     //Cek lagi
@@ -11,8 +13,13 @@ header {
     backdrop-filter: blur(5px);
     border-radius: 50px;
     padding: 0 42px;
-    left: 50%;
+    left: 50vw;
     margin-top: 24px;
     transform: translate(-50%, 0);
     z-index: 2;
+
+    @media (max-width: v.$laptop-down) {
+        width: 100%;
+        max-width: 1024px;
+    }
 }
