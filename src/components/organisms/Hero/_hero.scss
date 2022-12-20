@@ -14,20 +14,28 @@
         position: relative;
         margin: 0 auto;
 
-        @media (max-width: v.$laptop-down) {
-            max-width: 1024px;
-        }
     }
-
+    
     .elipse-1 {
         position: absolute;
         right: -20%;
         top: -60%;
     }
-
+    
     .elipse-2 {
         position: absolute;
         left: -10%;
         top: -10%;
     }
+
+    @media (max-width: v.$laptop-down) {
+        &__layout {
+            max-width: 1024px;
+        }
+    }
+
+    @media (max-width: v.$tablet-down) {
+            padding-top: 150px;
+    }
+    
 }

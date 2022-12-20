@@ -64,4 +64,27 @@
             width: 45vw;
         }
     }
+
+    @media (max-width: v.$tablet-down) {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: none;
+        row-gap: 50px;
+
+        &__content {
+            grid-row: 2;
+            text-align: center;
+            
+            .more-info {
+                justify-content: center;
+            }
+        }
+
+        &__img {
+            grid-row: 1;
+
+            img {
+                width: 70vw;
+            }
+        }
+    }
 }

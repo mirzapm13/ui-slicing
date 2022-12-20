@@ -1,3 +1,5 @@
+@use '../../../assets/styles/globals/variables' as v;
+
 .second {
     width: 100%;
     position: relative;
@@ -24,8 +26,13 @@
         margin: 0 auto;
         margin-bottom: 100px;
 
-        @media (max-width) {
+        @media (max-width: v.$laptop-down) {
             max-width: 1024px;
+        }
+
+        @media (max-width: v.$tablet-down) {
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
 }

@@ -1,3 +1,5 @@
+@use '../../../assets/styles/globals/variables' as v;
+
 .blockchain {
     display: flex;
     justify-content: center;
@@ -55,6 +57,27 @@
         &-image {
             position: relative;
         }
+    }
+
+    @media (max-width: v.$tablet-down){
+        &-container {
+            grid-template-columns: initial;
+            grid-template-rows: 40% 60%;
+            height: fit-content;
+            justify-items: center;
+
+            &-elipse-2 {
+                top: -50%;
+                right: -50%;
+            }
+
+            &-elipse-1 {
+                bottom: -50%;
+                left: -50%;
+            }
+        }
+
+        
     }
 
 }

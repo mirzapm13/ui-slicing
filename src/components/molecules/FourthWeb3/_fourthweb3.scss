@@ -1,3 +1,5 @@
+@use '../../../assets/styles/globals/variables' as v;
+
 .web3 {
     display: flex;
     justify-content: center;
@@ -7,14 +9,13 @@
     &-container {
         width: 100%;
         max-width: 910px;
-        height: 470px;
+        height: fit-content;
         background: #292937;
         filter: drop-shadow(7px 7px 15px rgba(0, 0, 0, 0.15));
         border-radius: 20px;
         position: relative;
         overflow: hidden;
-        padding-top: 95px;
-        padding-left: 64px;
+        padding: 95px 64px 30px 64px;
 
         &-elipse-1 {
             position: absolute;
@@ -50,5 +51,19 @@
         position: relative;
         border-radius: 20px;
         margin-left: -282px;
+    }
+
+    @media (max-width: v.$tablet-down){
+        flex-direction: column;
+
+        &-container {
+            width: fit-content;
+        }
+
+        &-image {
+            order: -1;
+            margin-left: unset;
+            margin-bottom: -60px;
+        }
     }
 }

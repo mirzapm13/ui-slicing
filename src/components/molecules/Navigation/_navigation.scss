@@ -16,7 +16,7 @@ nav {
             font-weight: 500;
             font-size: 18px;
             line-height: 23.5px;
-            @media (max-width: v.$laptop-down) {
+            @media (max-width: v.$tablet-down) {
                 display: none;       
             }
         }
@@ -33,7 +33,7 @@ nav {
             display: none;
             text-decoration: none;
             list-style-type: none;
-            @media (max-width: v.$laptop-down) {
+            @media (max-width: v.$tablet-down) {
                 display: block;       
             }
 

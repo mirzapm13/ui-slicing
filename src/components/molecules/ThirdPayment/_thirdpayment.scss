@@ -16,10 +16,6 @@
     justify-content: center;
     align-items: flex-start;
 
-    @media (max-width: v.$laptop-down) {
-        max-width: 1024px;
-    }
-
     .elipse-1 {
         position: absolute;
         left: -40%;
@@ -88,6 +84,49 @@
 
         img {
             margin: 78px -50px 30px -50px;
+        }
+    }
+
+    @media (max-width: v.$laptop-down) {
+        max-width: 1024px;
+    }
+
+    @media (max-width: v.$tablet-down) {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding-bottom: 30px;;
+
+        .elipse-1 {
+            bottom: -40%;
+            left: -50%;
+        }
+
+        .elipse-2 {
+            top: -40%;
+            right: -50%;
+        }
+
+        .fiat {
+            max-width: max-content;
+            margin-top: 80px;
+            order: -2;
+
+            div {
+                position: absolute;
+                top: -50px;
+            }
+        }
+
+        .blockchain-payment {
+            max-width: max-content;
+            margin-top: 80px;
+            order: -1;
+
+            div {
+                position: absolute;
+                top: -50px;
+            }
         }
     }
 }

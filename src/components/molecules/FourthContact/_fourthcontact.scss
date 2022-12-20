@@ -10,9 +10,6 @@
 
     &-howto {
         width: 604px;
-        @media (max-width: v.$laptop-down) {
-            width: 50vw;;
-        }
     }
 
     &-vr {
@@ -63,6 +60,20 @@
 
         .button {
             position: relative;
+        }
+    }
+
+    @media (max-width: v.$laptop-down) {
+        &-howto {
+            width: 50vw;
+        }
+    }
+
+    @media (max-width: v.$tablet-down) {
+        flex-direction: column;
+        row-gap: 20px;
+        &-howto {
+            width: 482px;
         }
     }
 }

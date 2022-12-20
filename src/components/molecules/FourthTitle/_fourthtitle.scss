@@ -1,3 +1,5 @@
+@use '../../../assets/styles/globals/variables' as v;
+
 .title {
     width: 100%;
     max-width: 1440px;
@@ -22,5 +24,11 @@
         font-size: 16px;
         line-height: 24px;
         text-align: center;
+    }
+
+    @media (max-width: v.$laptop-down){
+        br {
+            display: none;
+        }
     }
 }

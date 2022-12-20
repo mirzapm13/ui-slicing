@@ -8,10 +8,6 @@
     margin: 0 auto;
     margin-bottom: 96px;
 
-    @media (max-width: v.$laptop-down) {
-        max-width: 1024px;
-    }
-
     &-with {
         display: flex;
         flex-direction: column;
@@ -20,10 +16,6 @@
 
         img {
             size: 100%;
-
-            @media (max-width: v.$laptop-down) {
-                width: 30vw;
-            }
         }
 
         .pills {
@@ -66,6 +58,35 @@
             @media (max-width: v.$laptop-down) {
                 width: 30vw;
             }
+        }
+    }
+
+    @media (max-width: v.$laptop-down) {
+        max-width: 1024px;
+
+        &-with img {
+            width: 30vw;
+        }
+        &-vs img {
+            width: 5vw;
+        }
+        &-without img {
+            width: 30vw;
+        }
+    }
+
+    @media (max-width: v.$tablet-down) {
+        grid-template-columns: none;
+        grid-template-rows: 40% 30% 40%;
+        
+        &-with img {
+            width: auto;
+        }
+        &-vs img {
+            width: auto;
+        }
+        &-without img {
+            width: auto;
         }
     }
 }
