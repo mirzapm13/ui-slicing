@@ -66,4 +66,10 @@
             margin-bottom: -60px;
         }
     }
+
+    @media (max-width: v.$mobile-down){
+        &-image {
+            width: 80vw;
+        }
+    }
 }

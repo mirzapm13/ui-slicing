@@ -63,6 +63,10 @@
         }
     }
 
+    h3 {
+        position: relative;
+    }
+
     @media (max-width: v.$laptop-down) {
         &-howto {
             width: 50vw;
@@ -73,7 +77,15 @@
         flex-direction: column;
         row-gap: 20px;
         &-howto {
-            width: 482px;
+            width: 90vw;
+        }
+
+        &-vr {
+            max-width: 90vw;
+
+            &-man {
+                width: 70%;
+            }
         }
     }
 }

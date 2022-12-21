@@ -3,7 +3,6 @@
 .navbar {
     width: 100%;
     position: fixed;
-    //Cek lagi
     max-width: 1134px;
     display: flex;
     align-items: center;
@@ -20,5 +19,13 @@
 
     @media (max-width: v.$laptop-down) {
         max-width: 1024px;
+    }
+
+    @media (max-width: v.$mobile-down) {
+        padding: 30px;
+        height: 50px;
+        img {
+            width: 40%;
+        }
     }
 }

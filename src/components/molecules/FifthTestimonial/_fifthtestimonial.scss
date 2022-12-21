@@ -28,6 +28,8 @@
 
     @media (max-width: v.$tablet-down) {
         grid-template-columns: none;
+        max-width: 638px;
+        row-gap: 20px;
 
         &-title {
             text-align: center;

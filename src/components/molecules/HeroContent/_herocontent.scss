@@ -87,4 +87,8 @@
             }
         }
     }
+
+    @media (max-width: v.$mobile-down) {
+        grid-template-rows: none;
+    }
 }

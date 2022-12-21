@@ -1,6 +1,6 @@
 @use '../../../assets/styles/globals/variables' as v;
 
-nav {
+nav.normal {
     display: flex;
     align-items: center;
     gap: 43px;
@@ -10,36 +10,88 @@ nav {
         align-items: center;
         gap: 38px;
 
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         li.list-item {
             text-decoration: none;
             list-style-type: none;
             font-weight: 500;
             font-size: 18px;
             line-height: 23.5px;
-            @media (max-width: v.$tablet-down) {
-                display: none;       
-            }
         }
 
-        li.list-button  {
+        li.list-button {
             text-decoration: none;
             list-style-type: none;
             font-weight: 500;
             font-size: 18px;
             line-height: 23.5px;
+
+            .mobile-button {
+                display: none;
+                width: 30px;
+            }
         }
 
-        li.list-icon{
+        li.list-icon {
             display: none;
             text-decoration: none;
             list-style-type: none;
+
             @media (max-width: v.$tablet-down) {
-                display: block;       
+                display: block;
             }
 
             img {
                 width: 20px;
             }
         }
+    }
+
+    @media (max-width: v.$tablet-down) {
+        ul li.list-button {
+            .desktop-button {
+                display: none;
+            }
+
+            .mobile-button {
+                display: block;
+            }
+        }
+
+        ul li.list-item {
+            display: none;
+        }
+    }
+}
+
+nav.dropdown {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    border-radius: 20px;
+
+    a {
+        color: white;
+        padding: 20px;
+        width: 70vw;
+        text-align: center;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    &.active {
+        display: flex;
     }
 }

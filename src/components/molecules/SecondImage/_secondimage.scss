@@ -89,4 +89,16 @@
             width: auto;
         }
     }
+
+    @media (max-width: v.$mobile-down) {
+        &-with img {
+            width: 80vw;
+        }
+        &-vs img {
+            width: auto;
+        }
+        &-without img {
+            width: 80vw;
+        }
+    }
 }
